@@ -26,11 +26,19 @@ describe('HomePage', () => {
   });
 
   describe('#leftButtonEvent', () => {
-    it('audioHub plays a sound', () => {
-      spyOn(AudioHub, 'playSound')
+    // it('audioHub plays a sound', () => {
+    //   spyOn(AudioHub, 'playSound')
+    //   const page = new HomePage();
+    //   page.leftButtonEvent();
+    //   expect(AudioHub.playSound).toBeCalledWith('./sounds/plop.mp3');
+    // });
+
+    it('goes to confirmation page', () => {
       const page = new HomePage();
+      spyOn(page, 'navigate');
+
       page.leftButtonEvent();
-      expect(AudioHub.playSound).toBeCalledWith('./sounds/plop.mp3');
+      expect(page.navigate).toHaveBeenCalledWith('confirmation');
     });
   });
 
