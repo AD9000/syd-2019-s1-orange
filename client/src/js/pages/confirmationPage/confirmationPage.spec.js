@@ -10,11 +10,37 @@ describe('ConfirmationPage', () => {
   describe('#render', () => {
     it('should render my confirmation page', () => {
       const page = new ConfirmationPage();
-      expect(page.render()).toContain("Confirmation:");
+      expect(page.render());
     });
+  });
 
-    it('should contain confirmation message', () => {
+  describe("#leftButtonEvent", () => {
+    it('goes to home page', () => {
       const page = new ConfirmationPage();
+      spyOn(page, 'navigate');
+
+      page.leftButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
+    });
+  });
+
+  describe("#rightButtonEvent", () => {
+    it('goes to confirmed page', () => {
+      const page = new ConfirmationPage();
+      spyOn(page, 'navigate');
+
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('confirmed');
+    });
+  });
+
+  describe("#bottomButtonEvent", () => {
+    it('goes to home page', () => {
+      const page = new ConfirmationPage();
+      spyOn(page, 'navigate');
+
+      page.bottomButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });
 

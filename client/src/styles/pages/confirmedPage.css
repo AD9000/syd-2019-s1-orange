@@ -1,0 +1,13 @@
+.title{
+  text-align: center;
+  margin-left: -1rem;
+}
+
+.btn{
+  position: absolute;
+  border-radius: 50px;
+}
+
+.btn--home{
+  top: 6rem;
+}

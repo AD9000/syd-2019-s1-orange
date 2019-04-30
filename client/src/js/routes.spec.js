@@ -7,6 +7,8 @@ describe('routes', () => {
     expect(routes['contacts']).toBeDefined();
     expect(routes['team']).toBeDefined();
     expect(routes['404']).toBeDefined();
+    expect(routes['confirmation']).toBeDefined();
+    expect(routes['confirmed']).toBeDefined();
   });
 
 });

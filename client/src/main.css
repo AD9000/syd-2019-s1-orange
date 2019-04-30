@@ -1,2 +1,4 @@
 @import './styles/pages/home.css';
 @import 'map.css';
+@import './styles/pages/confirmationPage.css';
+@import './styles/pages/confirmedPage.css';

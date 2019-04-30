@@ -1,0 +1,25 @@
+.title{
+  text-align: center;
+  margin-left: -1rem;
+}
+
+.btn{
+  position: absolute;
+  border-radius: 50px;
+}
+
+.btn--yes{
+  right: 0;
+}
+
+.btn--home{
+  left: 0;
+}
+.btn--no{
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+
+
