@@ -1,6 +1,5 @@
-const HomePage = require('./loanSummaryPage');
+const LoanSummaryPage = require('./loanSummaryPage');
 const StorageHub = require('watch-framework').StorageHub;
-const AudioHub = require('watch-framework').AudioHub;
 
 describe('loanSummary', () => {
   let watchFace;
@@ -9,13 +8,26 @@ describe('loanSummary', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  describe('#render', () => {
-    it('should render my page correctly', () => {
-      const page = new HomePage();
-       expect(page.render()).toContain("<div>Status:</div>");
-      expect(page.render()).toContain("<div>Next Payment Due Date:</div>");
-      expect(page.render()).toContain("<div>Balance:</div>");
-      expect(page.render()).toContain("<div>Remaining Time:</div>");
+  // describe('#render', () => {
+  //   it('should render loan summary page', () => {
+  //     const loanSummary = [
+  //     { key: 'Status', value: 'Grace Period' }
+  //     ];
+  //     StorageHub.setData('loanSummary', loanSummary)
+  //     const page = new LoanSummaryPage();
+  //     page.pageWillLoad();
+  //     expect(page.render()).toContain("<span>Status: Grace Period</span>");
+  //   });
+  // });
+
+  describe('#leftButtonEvent', () => {
+    it('goes to root page', () => {
+      const page = new LoanSummaryPage();
+      spyOn(page, 'navigate');
+
+      page.leftButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });
+
 });
