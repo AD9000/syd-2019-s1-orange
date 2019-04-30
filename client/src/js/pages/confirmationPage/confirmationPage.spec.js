@@ -7,13 +7,6 @@ describe('ConfirmationPage', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  describe('#render', () => {
-    it('should render my confirmation page', () => {
-      const page = new ConfirmationPage();
-      expect(page.render());
-    });
-  });
-
   describe("#leftButtonEvent", () => {
     it('goes to home page', () => {
       const page = new ConfirmationPage();

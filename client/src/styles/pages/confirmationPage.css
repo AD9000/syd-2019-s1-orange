@@ -10,11 +10,15 @@
 
 .btn--yes{
   right: 0;
+  top: 6rem;
 }
 
+/* This code is implemented in confirmedPage.css (as it is used after this one)
 .btn--home{
   left: 0;
-}
+  top: 6rem;
+} */
+
 .btn--no{
   bottom: 0%;
   left: 50%;

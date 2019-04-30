@@ -9,19 +9,12 @@ describe('HomePage', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  describe('#pageWillLoad', () => {
-    it('should set contacts data on page load', () => {
-      spyOn(StorageHub, 'setData')
-      const page = new HomePage();
-      page.pageWillLoad();
-      expect(StorageHub.setData).toBeCalledWith('contacts', expect.any(Array));
-    })
-  })
+
 
   describe('#render', () => {
     it('should render my page correctly', () => {
       const page = new HomePage();
-      expect(page.render()).toContain("<div>Hello, World!</div>");
+      expect(page.render()).toContain("Request Meeting");
     });
   });
 
@@ -51,62 +44,5 @@ describe('HomePage', () => {
       expect(page.navigate).toHaveBeenCalledWith('contacts');
     });
   });
-
-  describe('#bottomButtonEvent', () => {
-    it('scrolls page down', () => {
-
-      const page = new HomePage({ watchFace });
-
-      page.bottomButtonEvent();
-
-      expect(watchFace.scrollTop).toEqual(40);
-
-    });
-  });
-
-  describe('#topButtonEvent', () => {
-    it('scrolls page up', () => {
-      const page = new HomePage({ watchFace });
-
-      page.topButtonEvent();
-
-      expect(watchFace.scrollTop).toEqual(-40);
-    });
-  });
-
-  describe('#updateTimeDisplay', () => {
-    it('updateTimeDisplays calls clock-time if its in the window', () => {
-      const page = new HomePage();
-
-      watchFace.innerHTML = page.render();
-
-      jest.spyOn(page,"getDateTime");
-      page.updateTimeDisplay(page.getDateTime);
-      expect(page.getDateTime).toHaveBeenCalledTimes(1);
-    });
-  });
-
-  describe('#updateTimeDisplay', () => {
-    it('updateTimeDisplays does not call clock-time if its not in the window', () => {
-      const page = new HomePage();
-
-      jest.spyOn(page,"getDateTime");
-      page.updateTimeDisplay(page.getDateTime);
-      expect(page.getDateTime).toHaveBeenCalledTimes(0);
-    });
-  });
-
-  describe('#updateTimeEverySecond', () => {
-    it('update time display gets called three times in 3000 ms', () => {
-      const page = new HomePage();
-
-      spyOn(page, 'updateTimeDisplay');
-
-      jest.useFakeTimers();
-      page.updateTimeEverySecond();
-      jest.runTimersToTime(3000);
-
-      expect(page.updateTimeDisplay).toHaveBeenCalledTimes(3);
-    });
-  });
 });
+
