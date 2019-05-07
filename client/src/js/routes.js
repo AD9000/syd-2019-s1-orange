@@ -6,6 +6,7 @@ const FourOhFour = require('./pages/404Page/404Page');
 const ConfirmationPage = require('./pages/confirmationPage/confirmationPage');
 const ConfirmedPage = require('./pages/confirmedPage/confirmedPage');
 const LoanSummaryPage = require('./pages/loanSummaryPage/loanSummaryPage');
+const MeetingDetailsPage = require('./pages/MeetingDetails/MeetingDetails');
 
 module.exports = {
   'setup': SetUpPage,
@@ -16,4 +17,5 @@ module.exports = {
   'confirmation': ConfirmationPage,
   'confirmed': ConfirmedPage,
   'loanSummary': LoanSummaryPage,
+  'MeetingDetails' :MeetingDetailsPage
 };

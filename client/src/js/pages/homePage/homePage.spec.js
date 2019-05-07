@@ -31,7 +31,7 @@ describe('HomePage', () => {
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('confirmation');
+      expect(page.navigate).toHaveBeenCalledWith('MeetingDetails');
     });
   });
 

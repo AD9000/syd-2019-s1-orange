@@ -3,15 +3,23 @@ const StorageHub = require('watch-framework').StorageHub;
 
 class MeetingDetails extends BasePage {
   template = require('./MeetingDetails.hbs');
+ getTomorrowsDate(todayDate) {
+    var dateTime = new Date(todayDate.getTime() + 1 * 24 * 60* 60 * 1000);
+    return dateTime.toLocaleString('en-AU').split(",")[0];
+  }
 
-  pageWillLoad() {
-    StorageHub.setData('MeetingDetails', [
-      { date: '4/17/2019' ,time: '15:15' ,invitees: 'Guy, girl' ,location: 'Sydney' ,status: 'Confirmed' },
-      { date: '5/17/2019' ,time: '16:15' ,invitees: 'NewGuy, Newgirl' ,location: 'Brisbane' ,status: 'Confirmed' },
-      { date: '6/17/2019' ,time: '17:15' ,invitees: 'sameGuy, samegirl' ,location: 'Mel' ,status: 'Confirmed' },
-    ])
+  leftButtonEvent() {
+  this.navigate('/');
 
   }
+  topButtonEvent() {
+    this.navigate('confirmation');
+  }
+
+  bottomButtonEvent() {
+    this.navigate('confirmation');
+  }
+
 }
 
 module.exports = MeetingDetails;

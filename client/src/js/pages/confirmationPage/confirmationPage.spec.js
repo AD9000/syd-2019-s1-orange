@@ -33,7 +33,7 @@ describe('ConfirmationPage', () => {
       spyOn(page, 'navigate');
 
       page.bottomButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('/');
+      expect(page.navigate).toHaveBeenCalledWith('MeetingDetails');
     });
   });
 

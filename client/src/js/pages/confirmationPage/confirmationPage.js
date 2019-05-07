@@ -17,7 +17,7 @@ class ConfirmationPage extends BasePage {
   }
 
   bottomButtonEvent() {
-    this.navigate('/');
+    this.navigate('MeetingDetails');
   }
 }
 
