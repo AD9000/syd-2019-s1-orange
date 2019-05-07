@@ -11,6 +11,10 @@ class LoanSummaryPage extends BasePage {
   pageWillLoad() {
     this.loanSummary = StorageHub.getData('loanSummary')
   }
+  bottomButtonEvent() {
+    this.navigate('home');
+  }
 }
+
 
 module.exports = LoanSummaryPage;
