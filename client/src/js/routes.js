@@ -1,3 +1,4 @@
+const SetUpPage = require('./pages/setUpPage/setUpPage');
 const HomePage = require('./pages/homePage/homePage');
 const ContactsPage = require('./pages/contactsPage/contactsPage');
 const TeamPage = require('./pages/teamPage/teamPage');
@@ -7,6 +8,7 @@ const ConfirmedPage = require('./pages/confirmedPage/confirmedPage');
 const LoanSummaryPage = require('./pages/loanSummaryPage/loanSummaryPage');
 
 module.exports = {
+  'setup': SetUpPage,
   '/': HomePage,
   'contacts': ContactsPage,
   'team': TeamPage,

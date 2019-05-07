@@ -87,18 +87,18 @@ describe('HomePage', () => {
     });
   });
 
-  // describe('#updateTimeEverySecond', () => {
-  //   it('update time display gets called three times in 3000 ms', () => {
-  //     const page = new HomePage();
+  describe('#updateTimeEverySecond', () => {
+    it('update time display gets called three times in 3000 ms', () => {
+      const page = new HomePage();
 
-  //     spyOn(page, 'updateTimeDisplay');
+      spyOn(page, 'updateTimeDisplay');
 
-  //     jest.useFakeTimers();
-  //     page.updateTimeEverySecond();
-  //     jest.runTimersToTime(3000);
+      jest.useFakeTimers();
+      page.updateTimeEverySecond();
+      jest.runTimersToTime(3000);
 
-  //     expect(page.updateTimeDisplay).toHaveBeenCalledTimes(3);
-  //   });
-  // });
+      expect(page.updateTimeDisplay).toHaveBeenCalledTimes(3);
+    });
+  });
 });
 
