@@ -13,12 +13,13 @@ class CollectorPage extends BasePage {
   }
 
   leftButtonEvent() {
-    //this.navigate('confirmation');
+    //this.navigate('meetingList');
     //  AudioHub.playSound(plop);
   }
 
 
   topButtonEvent() {
+    this.navigate('meetingList');
   }
 
   bottomButtonEvent() {

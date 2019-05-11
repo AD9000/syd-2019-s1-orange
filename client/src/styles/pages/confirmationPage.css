@@ -14,7 +14,13 @@
   transform: translate(-50%, 0%);
 }
 
-.btn--yes{
+.btn--bottom {
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.btn--yes {
   right: 0;
   top: 6rem;
 }
@@ -24,6 +30,11 @@
   left: 0;
   top: 6rem;
 } */
+
+.btn--left {
+  left: 0;
+  top: 6rem;
+}
 
 .btn--no{
   bottom: 0%;

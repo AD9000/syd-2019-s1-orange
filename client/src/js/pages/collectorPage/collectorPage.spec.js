@@ -12,7 +12,7 @@ describe('CollectorPage', () => {
   describe('#render', () => {
     it('should render my page correctly', () => {
       const page = new CollectorPage();
-      expect(page.render()).toContain("home");
+      expect(page.render()).toContain(" ");
     });
   });
 
