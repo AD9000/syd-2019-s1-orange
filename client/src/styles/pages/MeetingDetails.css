@@ -1,6 +1,8 @@
 .title{
   text-align: center;
   margin-left: -1rem;
+  top: 20px;
+  position: relative;
 }
 
 .btn{
