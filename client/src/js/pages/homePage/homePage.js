@@ -38,6 +38,11 @@ class HomePage extends BasePage {
      { key: 'Date', value: '21/05/2019' },
      { key: 'Status', value: 'Pending' },
    ])
+
+    StorageHub.setData('gracePeriod', [
+     { pageNumber: '1 of 2', Name: 'Bob Kelso', Amount: "$100.00", PhoneNo: "0431 111 111" },
+     { pageNumber: '2 of 2', Name: 'Barry Ometer', Amount: "$80.00", PhoneNo: "0431 212 222" }
+   ])
   }
 }
 

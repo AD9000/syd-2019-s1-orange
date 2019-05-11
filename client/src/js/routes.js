@@ -12,6 +12,7 @@ const CollectorPage = require('./pages/collectorPage/collectorPage');
 const ConfirmedMeetingsPage = require('./pages/confirmedMeetingsPage/confirmedMeetingsPage');
 const CollectorMeetings = require('./pages/collectorsMeetings/collectorsMeetings')
 const LoanStatusPage = require('./pages/loanStatusPage/loanStatusPage');
+const GracePage = require('./pages/gracePage/gracePage');
 
 
 module.exports = {
@@ -31,5 +32,9 @@ module.exports = {
   'ColMeetings' : CollectorMeetings
 =======
   'loanStatus': LoanStatusPage,
+<<<<<<< HEAD
 >>>>>>> [Annie] create loan status page
+=======
+  'grace': GracePage
+>>>>>>> [Annie/Christie] add grace list
 };
