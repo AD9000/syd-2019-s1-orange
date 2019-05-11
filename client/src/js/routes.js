@@ -6,6 +6,7 @@ const ConfirmationPage = require('./pages/confirmationPage/confirmationPage');
 const ConfirmedPage = require('./pages/confirmedPage/confirmedPage');
 const LoanSummaryPage = require('./pages/loanSummaryPage/loanSummaryPage');
 const MeetingDetailsPage = require('./pages/MeetingDetails/MeetingDetails');
+const MeetingListPage = require('./pages/MeetingListPage/MeetingListPage');
 const ClientPage = require('./pages/clientPage/clientPage');
 const CollectorPage = require('./pages/collectorPage/collectorPage')
 
@@ -18,6 +19,7 @@ module.exports = {
   'confirmed': ConfirmedPage,
   'loanSummary': LoanSummaryPage,
   'MeetingDetails' :MeetingDetailsPage,
+  'meetingList': MeetingListPage,
   'client': ClientPage,
   'collector': CollectorPage
 };
