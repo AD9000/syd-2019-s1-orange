@@ -1,0 +1,10 @@
+<h1>Meetings</h1>
+<ul>
+  {{#each MeetDetails}}
+    <li>
+      <span>Meeting {{this.lname}},{{this.fname}} on {{this.mDate}} at {{this.mTime}}</span>
+      <br/>
+    </li>
+  {{/each}}
+</ul>
+<button class='btn btn--no'>Press Left to go Home</button>

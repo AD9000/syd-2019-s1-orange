@@ -1,0 +1,15 @@
+.title{
+  text-align: center;
+  margin-left: -1rem;
+}
+
+.btn{
+  position: absolute;
+  border-radius: 50px;
+}
+
+.btn--no{
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}

@@ -10,6 +10,7 @@ const MeetingListPage = require('./pages/MeetingListPage/MeetingListPage');
 const ClientPage = require('./pages/clientPage/clientPage');
 const CollectorPage = require('./pages/collectorPage/collectorPage');
 const ConfirmedMeetingsPage = require('./pages/confirmedMeetingsPage/confirmedMeetingsPage');
+const CollectorMeetings = require('./pages/collectorsMeetings/collectorsMeetings')
 
 module.exports = {
   '/': HomePage,
@@ -23,5 +24,6 @@ module.exports = {
   'MeetingDetails' :MeetingDetailsPage,
   'meetingList': MeetingListPage,
   'client': ClientPage,
-  'collector': CollectorPage
+  'collector': CollectorPage,
+  'ColMeetings' : CollectorMeetings
 };
