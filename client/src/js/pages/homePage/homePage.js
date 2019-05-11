@@ -8,16 +8,6 @@ const plop = './sounds/plop.mp3';
 class HomePage extends BasePage {
   template = require('./homePage.hbs');
 
-  rightButtonEvent() {
-    this.navigate('contacts');
-  }
-
-  leftButtonEvent() {
-
-//    this.navigate('confirmation');
-    this.navigate('MeetingDetails');
-  }
-
   bottomButtonEvent() {
     this.navigate('client');
     //  AudioHub.playSound(plop);
@@ -39,6 +29,12 @@ class HomePage extends BasePage {
      { key: 'Next Payment Due Date', value: '07/12/2019' },
      { key: 'Balance', value: '1000' },
      { key: 'Remaining Time', value: '12' },
+   ])
+
+    StorageHub.setData('confirmedMeetings', [
+     { key: 'Time', value: '1:30pm' },
+     { key: 'Date', value: '21/05/2019' },
+     { key: 'Status', value: 'Pending' },
    ])
   }
 }

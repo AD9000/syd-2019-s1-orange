@@ -11,6 +11,7 @@ describe('routes', () => {
     expect(routes['confirmed']).toBeDefined();
     expect(routes['client']).toBeDefined();
     expect(routes['collector']).toBeDefined();
+    expect(routes['confirmedMeetings']).toBeDefined();
   });
 
 });

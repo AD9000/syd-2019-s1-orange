@@ -8,6 +8,10 @@ const plop = './sounds/plop.mp3';
 class ClientPage extends BasePage {
   template = require('./clientPage.hbs');
 
+  topButtonEvent() {
+    this.navigate('confirmedMeetings');
+  }
+
   rightButtonEvent() {
     this.navigate('contacts');
   }
