@@ -18,10 +18,12 @@ class HomePage extends BasePage {
   }
 
   pageWillLoad() {
-   StorageHub.setData('contacts', [
-     { name: 'Ray', phoneNumber: '0431 111 111' },
-     { name: 'Sinan', phoneNumber: '0431 222 222' },
-     { name: 'Jafari', phoneNumber: '0431 333 333' },
+   StorageHub.setData('profile', [
+     { key: 'Name', value: 'Ray Sinan'},
+     { key: 'PhoneNumber', value: '0431 111 111' },
+     { key: 'Status', value: 'Grace Period' },
+     { key: 'Collector', value: 'Jafari'},
+     { key: 'Cohort', value: 'Area51'}
    ])
 
    StorageHub.setData('loanSummary', [

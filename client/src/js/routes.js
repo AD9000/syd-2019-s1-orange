@@ -1,5 +1,5 @@
 const HomePage = require('./pages/homePage/homePage');
-const ContactsPage = require('./pages/contactsPage/contactsPage');
+const ProfilePage = require('./pages/profilePage/profilePage');
 const TeamPage = require('./pages/teamPage/teamPage');
 const FourOhFour = require('./pages/404Page/404Page');
 const ConfirmationPage = require('./pages/confirmationPage/confirmationPage');
@@ -14,7 +14,7 @@ const CollectorMeetings = require('./pages/collectorsMeetings/collectorsMeetings
 
 module.exports = {
   '/': HomePage,
-  'contacts': ContactsPage,
+  'profile': ProfilePage,
   'confirmedMeetings': ConfirmedMeetingsPage,
   'team': TeamPage,
   '404': FourOhFour,

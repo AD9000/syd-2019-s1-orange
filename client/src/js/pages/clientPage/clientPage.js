@@ -13,7 +13,7 @@ class ClientPage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('contacts');
+    this.navigate('profile');
   }
 
   leftButtonEvent() {

@@ -40,7 +40,7 @@ describe('ClientPage', () => {
       spyOn(page, 'navigate');
 
       page.rightButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('contacts');
+      expect(page.navigate).toHaveBeenCalledWith('profile');
     });
   });
 

@@ -1,11 +1,11 @@
 const BasePage = require('watch-framework').BasePage;
 const StorageHub = require('watch-framework').StorageHub;
 
-class ContactsPage extends BasePage {
-  template = require('./contactsPage.hbs');
+class ProfilePage extends BasePage {
+  template = require('./profilePage.hbs');
 
   pageWillLoad() {
-    this.contacts = StorageHub.getData('contacts')
+    this.profile = StorageHub.getData('profile')
   }
 
   leftButtonEvent() {
@@ -13,4 +13,4 @@ class ContactsPage extends BasePage {
   }
 }
 
-module.exports = ContactsPage;
+module.exports = ProfilePage;
