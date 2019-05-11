@@ -14,7 +14,7 @@ class ClientPage extends BasePage {
 
   leftButtonEvent() {
 
-    this.navigate('confirmation');
+    this.navigate('MeetingDetails');
     //  AudioHub.playSound(plop);
   }
 

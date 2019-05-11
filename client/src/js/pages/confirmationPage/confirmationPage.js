@@ -17,11 +17,7 @@ class ConfirmationPage extends BasePage {
   }
 
   bottomButtonEvent() {
-<<<<<<< Updated upstream
     this.navigate('MeetingDetails');
-=======
-    this.navigate('client');
->>>>>>> Stashed changes
   }
 }
 

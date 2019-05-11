@@ -8,12 +8,12 @@ describe('Meeting_Details', () => {
     watchFace = document.getElementById('watch-face');
   });
   describe('#leftButtonEvent', () => {
-    it('goes to root page', () => {
+    it('goes to client home page', () => {
       const page = new ConfirmedPage();
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('/');
+      expect(page.navigate).toHaveBeenCalledWith('client');
     });
   });
 });

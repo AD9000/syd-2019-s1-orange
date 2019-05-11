@@ -9,7 +9,7 @@ class MeetingDetails extends BasePage {
   }
 
   leftButtonEvent() {
-  this.navigate('/');
+  this.navigate('client');
 
   }
   topButtonEvent() {

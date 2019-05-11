@@ -33,11 +33,7 @@ describe('ConfirmationPage', () => {
       spyOn(page, 'navigate');
 
       page.bottomButtonEvent();
-<<<<<<< Updated upstream
       expect(page.navigate).toHaveBeenCalledWith('MeetingDetails');
-=======
-      expect(page.navigate).toHaveBeenCalledWith('client');
->>>>>>> Stashed changes
     });
   });
 
