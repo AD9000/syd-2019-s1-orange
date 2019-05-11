@@ -17,6 +17,11 @@ class LoanStatusPage extends BasePage {
     console.log("grac");
      this.navigate('grace');
   }
+
+    bottomButtonEvent() {
+    console.log("grac");
+     this.navigate('payment');
+  }
 }
 
 module.exports = LoanStatusPage;

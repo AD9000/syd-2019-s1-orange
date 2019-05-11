@@ -13,6 +13,7 @@ const ConfirmedMeetingsPage = require('./pages/confirmedMeetingsPage/confirmedMe
 const CollectorMeetings = require('./pages/collectorsMeetings/collectorsMeetings')
 const LoanStatusPage = require('./pages/loanStatusPage/loanStatusPage');
 const GracePage = require('./pages/gracePage/gracePage');
+const PaymentPage = require('./pages/paymentPage/paymentPage');
 
 
 module.exports = {
@@ -28,13 +29,9 @@ module.exports = {
   'meetingList': MeetingListPage,
   'client': ClientPage,
   'collector': CollectorPage,
-<<<<<<< HEAD
-  'ColMeetings' : CollectorMeetings
-=======
+  'ColMeetings' : CollectorMeetings,
   'loanStatus': LoanStatusPage,
-<<<<<<< HEAD
->>>>>>> [Annie] create loan status page
-=======
-  'grace': GracePage
->>>>>>> [Annie/Christie] add grace list
+  'grace': GracePage,
+    'payment': PaymentPage
+
 };
