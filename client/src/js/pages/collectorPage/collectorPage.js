@@ -18,7 +18,7 @@ class CollectorPage extends BasePage {
   }
 
   bottomButtonEvent() {
-    //this.navigate('loanSummary');
+    this.navigate('loanStatus');
   }
   pageWillLoad() {
    StorageHub.setData('ColMeetings', [

@@ -11,6 +11,8 @@ const ClientPage = require('./pages/clientPage/clientPage');
 const CollectorPage = require('./pages/collectorPage/collectorPage');
 const ConfirmedMeetingsPage = require('./pages/confirmedMeetingsPage/confirmedMeetingsPage');
 const CollectorMeetings = require('./pages/collectorsMeetings/collectorsMeetings')
+const LoanStatusPage = require('./pages/loanStatusPage/loanStatusPage');
+
 
 module.exports = {
   '/': HomePage,
@@ -25,5 +27,9 @@ module.exports = {
   'meetingList': MeetingListPage,
   'client': ClientPage,
   'collector': CollectorPage,
+<<<<<<< HEAD
   'ColMeetings' : CollectorMeetings
+=======
+  'loanStatus': LoanStatusPage,
+>>>>>>> [Annie] create loan status page
 };
