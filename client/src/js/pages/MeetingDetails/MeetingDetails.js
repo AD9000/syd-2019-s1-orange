@@ -19,7 +19,5 @@ class MeetingDetails extends BasePage {
   bottomButtonEvent() {
     this.navigate('confirmation');
   }
-
 }
-
 module.exports = MeetingDetails;

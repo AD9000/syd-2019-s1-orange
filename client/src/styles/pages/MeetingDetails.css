@@ -1,0 +1,28 @@
+.title{
+  text-align: center;
+  margin-left: -1rem;
+}
+
+.btn{
+  position: absolute;
+  border-radius: 50px;
+}
+
+.btn--Top{
+  position: relative;
+  left: 50%;
+  top: 0rem;
+  transform:translate(-50%, 0%);
+}
+
+.btn--Bottom{
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.txtblock{
+  text-align: right;
+  position: absolute;
+  right:0rem;
+}
