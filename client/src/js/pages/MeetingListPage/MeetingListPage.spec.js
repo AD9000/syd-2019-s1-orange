@@ -12,7 +12,7 @@ describe('Meeting List', () => {
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('');
+      expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });
 });
