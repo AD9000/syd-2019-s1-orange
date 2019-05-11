@@ -5,14 +5,14 @@ class LoanSummaryPage extends BasePage {
   template = require('./loanSummaryPage.hbs');
 
   leftButtonEvent() {
-    this.navigate('/');
+    this.navigate('client');
   }
 
   pageWillLoad() {
     this.loanSummary = StorageHub.getData('loanSummary')
   }
   bottomButtonEvent() {
-    this.navigate('home');
+    //this.navigate('home');
   }
 }
 

@@ -1,8 +1,8 @@
-const HomePage = require('./homePage');
+const ClientPage = require('./clientPage');
 const StorageHub = require('watch-framework').StorageHub;
 const AudioHub = require('watch-framework').AudioHub;
 
-describe('HomePage', () => {
+describe('ClientPage', () => {
   let watchFace;
   beforeEach(() => {
     document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
@@ -13,41 +13,50 @@ describe('HomePage', () => {
 
   describe('#render', () => {
     it('should render my page correctly', () => {
-      const page = new HomePage();
-      expect(page.render()).toContain("Client");
+      const page = new ClientPage();
+      expect(page.render()).toContain("Request Meeting");
     });
   });
 
-  describe('#bottomButtonEvent', () => {
+  describe('#leftButtonEvent', () => {
     // it('audioHub plays a sound', () => {
     //   spyOn(AudioHub, 'playSound')
-    //   const page = new HomePage();
+    //   const page = new ClientPage();
     //   page.leftButtonEvent();
     //   expect(AudioHub.playSound).toBeCalledWith('./sounds/plop.mp3');
     // });
-
-    it('goes to client page', () => {
-      const page = new HomePage();
+    it('goes to confirmation page', () => {
+      const page = new ClientPage();
       spyOn(page, 'navigate');
 
-      page.bottomButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('client');
+      page.leftButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('MeetingDetails');
     });
   });
 
-  describe('#topButtonEvent', () => {
-    it('goes to collector\'s page', () => {
-      const page = new HomePage();
+  describe('#rightButtonEvent', () => {
+    it('goes to contacts page', () => {
+      const page = new ClientPage();
       spyOn(page, 'navigate');
 
-      page.topButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('collector');
+      page.rightButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('contacts');
+    });
+  });
+
+
+  describe('#bottomButtonEvent', () => {
+    it('goes to loan summary', () => {
+      const page = new ClientPage();
+      spyOn(page, 'navigate');
+      page.bottomButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('loanSummary');
     });
   });
 
   // describe('#updateTimeDisplay', () => {
   //   it('updateTimeDisplays calls clock-time if its in the window', () => {
-  //     const page = new HomePage();
+  //     const page = new ClientPage();
 
   //     watchFace.innerHTML = page.render();
 

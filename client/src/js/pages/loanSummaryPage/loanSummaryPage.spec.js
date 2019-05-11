@@ -8,17 +8,17 @@ describe('loanSummary', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  // describe('#render', () => {
-  //   it('should render loan summary page', () => {
-  //     const loanSummary = [
-  //     { key: 'Status', value: 'Grace Period' }
-  //     ];
-  //     StorageHub.setData('loanSummary', loanSummary)
-  //     const page = new LoanSummaryPage();
-  //     page.pageWillLoad();
-  //     expect(page.render()).toContain("<span>Status: Grace Period</span>");
-  //   });
-  // });
+  describe('#render', () => {
+    it('should render loan summary page', () => {
+      const loanSummary = [
+      { key: 'Status', value: 'Grace Period' }
+      ];
+      StorageHub.setData('loanSummary', loanSummary)
+      const page = new LoanSummaryPage();
+      page.pageWillLoad();
+      expect(page.render()).toContain("Status: Grace Period");
+    });
+  });
 
   describe('#leftButtonEvent', () => {
     it('goes to root page', () => {
@@ -26,7 +26,7 @@ describe('loanSummary', () => {
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('/');
+      expect(page.navigate).toHaveBeenCalledWith('client');
     });
   });
 

@@ -9,7 +9,7 @@ class ConfirmationPage extends BasePage {
   }
 
   leftButtonEvent() {
-    this.navigate('/');
+    this.navigate('client');
   }
 
   rightButtonEvent() {
@@ -17,7 +17,11 @@ class ConfirmationPage extends BasePage {
   }
 
   bottomButtonEvent() {
+<<<<<<< Updated upstream
     this.navigate('MeetingDetails');
+=======
+    this.navigate('client');
+>>>>>>> Stashed changes
   }
 }
 

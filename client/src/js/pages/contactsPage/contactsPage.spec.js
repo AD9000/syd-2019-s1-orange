@@ -27,7 +27,7 @@ describe('ContactsPage', () => {
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('/');
+      expect(page.navigate).toHaveBeenCalledWith('client');
     });
   });
 });

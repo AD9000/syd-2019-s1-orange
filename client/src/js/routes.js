@@ -1,4 +1,3 @@
-const SetUpPage = require('./pages/setUpPage/setUpPage');
 const HomePage = require('./pages/homePage/homePage');
 const ContactsPage = require('./pages/contactsPage/contactsPage');
 const TeamPage = require('./pages/teamPage/teamPage');
@@ -7,9 +6,10 @@ const ConfirmationPage = require('./pages/confirmationPage/confirmationPage');
 const ConfirmedPage = require('./pages/confirmedPage/confirmedPage');
 const LoanSummaryPage = require('./pages/loanSummaryPage/loanSummaryPage');
 const MeetingDetailsPage = require('./pages/MeetingDetails/MeetingDetails');
+const ClientPage = require('./pages/clientPage/clientPage');
+const CollectorPage = require('./pages/collectorPage/collectorPage')
 
 module.exports = {
-  'setup': SetUpPage,
   '/': HomePage,
   'contacts': ContactsPage,
   'team': TeamPage,
@@ -17,5 +17,7 @@ module.exports = {
   'confirmation': ConfirmationPage,
   'confirmed': ConfirmedPage,
   'loanSummary': LoanSummaryPage,
-  'MeetingDetails' :MeetingDetailsPage
+  'MeetingDetails' :MeetingDetailsPage,
+  'client': ClientPage,
+  'collector': CollectorPage
 };
